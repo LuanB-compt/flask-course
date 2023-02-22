@@ -1,18 +1,15 @@
 # **FLASK DOCUMENTATION**
 
-## **RUN APP.PY**
+## **RUN APPLICATION**
+You can choose one of this options below:
 ```
 $ flask --app [filename] run 
+$ flask run                   # Flask will search for a app.py or application.py 
 ```
 
-or
-
+## **DEBUG MODE**
+You can chosse one of this options below:
 ```
-$ flask run  # Flask will search for a app.py or application.py 
-```
-
-Debug mode:
-
-```
-$ flask run --debug # Activate the debugger
+$ flask --app [filename] run --debug
+$ flask run --debug                   # Flask will search for a app.py or application.py 
 ```
