@@ -1,0 +1,23 @@
+h1 {
+    text-align: center;
+    color: rgb(255, 0, 0);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    margin: 30px;
+}
+
+.div__form__input {
+    max-height: 40px;
+    max-width: 500px;
+    min-height: 40px;
+    min-width: 500px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
