@@ -51,7 +51,7 @@
         </div>
     </header>
 
-    <div class="container div__body">
+    <div class="container">
         <p class="div__p">
             x + y = {{ x + y }}
         </p>
@@ -64,6 +64,19 @@
                 X is smaller than 10.
             </p>
         {% endif %}
+    </div>
+
+    <hr>
+
+    <div class="div__body">
+        <table>
+            {% for item, value in query.items() %}
+                <tr>
+                    <th>{{item}} = </th>
+                    <td>{{value}} <br></td>
+                </tr>
+            {% endfor %}
+        </table>
     </div>
 
     <script src="/static/bootstrap/js/bootstrap.bundle.min.js"></script>
