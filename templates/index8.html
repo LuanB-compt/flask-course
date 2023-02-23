@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/style_index8.css">
+    <title>HOME PAGE - FLASK COURSE</title>
+</head>
+
+<body>
+    <!--
+        HEADER INTRODUTION
+    -->
+    <header>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-sm">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">OPTIONS</a>
+                    <button 
+                        class="navbar-toggler" 
+                        type="button" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">School</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Professor</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">Class</a>
+                            </li>
+                        </ul>
+                    </div>                  
+                </div>
+            </nav>
+            <h1 class="text-center header__h1">CALCULUS COMPUTATION</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <form class="div__form" action="http://127.0.0.1:5000/result" method="post"> <!--position-absolute top-50 start-50 translate-middle-->
+            {% for n in range(4) %}
+                <p class="div__p">
+                    <input type="number" min="0" max="10" name="score{{n}}" placeholder="Score {{n}}" required>
+                </p>
+            {% endfor %}
+            <button class="div__form__btn" type="submit">Submit</button>
+        </form>
+    </div>
+
+
+    <script src="/static/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

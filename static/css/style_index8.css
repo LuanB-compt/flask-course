@@ -1,0 +1,29 @@
+/*HEADER INTRODUTION*/
+.header__h1 {
+    margin-bottom:20px;
+    margin-top: 20px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.div__form {
+    justify-content: center;
+}
+
+.div__p {
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.div__form__btn {
+    margin-top: 7px;
+    padding: 5px;
+    color: aliceblue;
+    border-width: 3px;
+    border-color: rgb(77, 0, 0);
+    background-color: rgb(117, 8, 8);
+}
