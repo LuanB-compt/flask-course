@@ -1,0 +1,17 @@
+/*HEADER INTRODUTION*/
+.header__h1 {
+    margin-bottom:20px;
+    margin-top: 20px;
+}
+
+.div__p {
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.div__body {
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+}

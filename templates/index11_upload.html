@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/style_index11.css">
+    <title>VISUALIZE FILES</title>
+</head>
+<body>
+    <div class="container text-center">
+        {% if sucess %}
+            <h4>Your image was uploaded with sucess!</h4>
+            <h4>VISUALIZE THE IMAGE</h4>
+            <img src="{{ url_for('static', filename='upload/acesso.png') }}" alt="TESTE">
+        {% else %}
+            <h4>Something wrong ocurred!</h4>
+        {% endif %}
+    </div>
+</body>
+</html>
