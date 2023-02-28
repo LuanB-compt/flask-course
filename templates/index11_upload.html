@@ -13,7 +13,7 @@
         {% if sucess %}
             <h4>Your image was uploaded with sucess!</h4>
             <h4>VISUALIZE THE IMAGE</h4>
-            <img src="{{ save_path }}" alt="TESTE">
+            <img src="{{ url_for('static', filename='upload/acesso.png') }}" alt="TESTE">
         {% else %}
             <h4>Something wrong ocurred!</h4>
         {% endif %}
